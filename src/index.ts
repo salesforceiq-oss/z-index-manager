@@ -1,19 +1,22 @@
 ///<reference path="../typings/browser.d.ts" />
 
-import {SampleModule} from './SampleModule';
+export class ZIndexManager {
+  highest: number;
+  lowest: number;
 
-declare var angular;
-declare var require;
+  constructor() {
+    this.highest = 10000;
+    this.lowest = -10000;
+  }
 
-export const name = 'SampleModule';
+  public getHighest(): number {
+    return ++this.highest;
+  }
 
-export const angularModule = angular.module(name, [])
-  .directive('sampleModule', function() {
-    return {
-      restrict: 'E',
-      scope: {},
-      controller: SampleModule,
-      controllerAs: 'ctrl',
-      template: require('./index.html')
-    }
-  });
+  public getLowest(): number {
+    return --this.lowest;
+  }
+
+}
+
+export default new ZIndexManager();

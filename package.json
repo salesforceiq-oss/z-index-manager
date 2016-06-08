@@ -24,7 +24,6 @@
     "express": "~4.13.4",
     "http-proxy": "~1.13.2",
     "node-sass": "~3.4.2",
-    "riq-partialify": "~3.1.6",
     "shallow-diff": "0.0.5",
     "tap-min": "~1.1.0",
     "tape": "~4.5.1",
@@ -37,12 +36,6 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
-  },
-  "browserify-shim": {},
-  "browserify": {
-    "transform": [
-      "riq-partialify"
-    ]
   },
   "author": "Danyaal Rangwala <danyaal@rangwa.la>",
   "license": "MIT",

@@ -1,3 +1,7 @@
+[![npm][npm-badge]][npm-badge-url]
+[npm-badge]: https://img.shields.io/npm/v/z-index-manager.svg
+[npm-badge-url]: https://www.npmjs.com/package/z-index-manager
+
 # Z-Index Manager
 
 ## What is Z-Index Manager?

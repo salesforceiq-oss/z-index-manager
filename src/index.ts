@@ -1,5 +1,5 @@
 ///<reference path="../typings/browser.d.ts" />
-
+var manager;
 export class ZIndexManager {
   highest: number;
   lowest: number;
@@ -19,4 +19,13 @@ export class ZIndexManager {
 
 }
 
-export default new ZIndexManager();
+export default function(isSingleton : boolean = true) {
+  if (isSingleton) {
+    if (!manager) {
+      manager = new ZIndexManager();
+    }
+    return manager;
+  } else {
+    return new ZIndexManager();
+  }
+};

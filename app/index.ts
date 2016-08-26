@@ -1,6 +1,6 @@
 ///<reference path="../typings/browser.d.ts"/>
 declare var require: NodeRequire;
-let ZIndexManager = require('../.src').default;
+let ZIndexManager = require('../.src').default();
 
 document.body.addEventListener('click', function(e) {
     if ((<Element>e.target).getAttribute('id') === 'newElBtn') {

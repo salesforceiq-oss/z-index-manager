@@ -12,6 +12,8 @@ Z-Index Manager will easily manage highest and lowest z-indexes on the DOM.
 
 **js**
 ```javascript
+var ZIndexManager = require('z-index-manager').default();
+
 // Returns the new highest Z-Index on the DOM.
 ZIndexManager.getHighest();
 
@@ -20,4 +22,5 @@ ZIndexManager.getLowest();
 ```
 
 ## Run Demo Z-Index Manager Application
+Run `iqb install` in the root directory to install depenedencies
 Run `iqb start` in the root directory to run a demo application with Z-Index Manager.

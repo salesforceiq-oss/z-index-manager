@@ -13,7 +13,8 @@
   "scripts": {
     "test": "bin/iqb test",
     "start": "bin/iqb start",
-    "preversion": "bin/iqb test"
+    "preversion": "bin/iqb build",
+    "postpublish": "git push"
   },
   "devDependencies": {
     "aliasify": "~1.9.0",

@@ -1,5 +1,4 @@
 ///<reference path="../typings/browser.d.ts" />
-var manager;
 export class ZIndexManager {
   highest: number;
   lowest: number;
@@ -21,6 +20,9 @@ export class ZIndexManager {
 
 export default function(isSingleton : boolean = true) {
   if (isSingleton) {
+    var windowScope = <any>window;
+    windowScope.zIndexManagerNamespace = windowScope.zIndexManagerNamespace || {};
+    var manager = windowScope.zIndexManagerNamespace.manager;
     if (!manager) {
       manager = new ZIndexManager();
     }

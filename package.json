@@ -1,6 +1,6 @@
 {
   "name": "z-index-manager",
-  "version": "0.2.0",
+  "version": "0.1.3",
   "description": "Easily manage highest and lowest z-indexes on the DOM.",
   "main": ".src/index.js",
   "homepage": "https://github.com/relateiq/z-index-manager",

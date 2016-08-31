@@ -24,7 +24,7 @@ export default function(isSingleton : boolean = true) {
     windowScope.zIndexManagerNamespace = windowScope.zIndexManagerNamespace || {};
     var manager = windowScope.zIndexManagerNamespace.manager;
     if (!manager) {
-      manager = new ZIndexManager();
+      windowScope.zIndexManagerNamespace.manager = manager = new ZIndexManager();
     }
     return manager;
   } else {
